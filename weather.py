@@ -27,7 +27,7 @@ class Display(Thread):
         
     def run(self):
         while self.enableEmulator == True:
-            owm = pyowm.OWM('270e9c1fe2c20c42dc7857efedc17320')
+            owm = pyowm.OWM('xxxxxxxxxxxxxxxxxxxxxxxxxx')
             boston = owm.weather_at_place('Boston,US')
             weather = boston.get_weather()
             temp = weather.get_temperature('fahrenheit')['temp']
